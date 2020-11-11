@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			background-color: azure;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Introdução 3</title>
+</head>
+
+<body>
+	<div class="container text-center">
+		
+		<h1>Manipulando Style</h1>
+
+		<button  class="btn btn-outline-primary" type="button" onclick="document.getElementById('font').style.fontSize = '35px'">Aumentar</button>
+		
+		<p id="font">Aumentar para 35px e diminuir pra 15px</p>
+		
+		<button  class="btn btn-outline-info" type="button" onclick="document.getElementById('font').style.fontSize = '15px'">Diminuir</button>
+		
+		<h1>Manipulando Style==> COR</h1>
+
+		<button  class="btn btn-outline-success" type="button" onclick="document.getElementById('font1').style.color = 'green'">Verde</button>
+		
+		<p id="font1">Mudar da cor preta para cor Vermelha</p>
+		
+		<button  class="btn btn-outline-danger" type="button" onclick="document.getElementById('font1').style.color = 'red'">Vermelho</button>
+
+		<h1>Manipulando Display</h1>
+			<div id="boxLamp">
+		<button  class="btn btn-outline-success" type="button" onclick="document.getElementById('lamp1').src='pic_bulbon.gif'">ligar</button>
+		
+		<img id="lamp1" src="pic_bulboff.gif" style="width: 150px">
+		
+		<button  class="btn btn-outline-danger" type="button" onclick="document.getElementById('lamp1').src='pic_bulboff.gif'">desligar</button>
+			</div>
+		<button  class="btn btn-outline-dark" type="button" onclick="document.getElementById('boxLamp').style.display='none'">Sumir</button>
+		<button  class="btn btn-outline-primary" type="button" onclick="document.getElementById('boxLamp').style.display='block'">Aparecer</button>
+	</div>
+			
+			
+</body>
+
+</html>
